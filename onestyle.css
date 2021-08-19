@@ -202,6 +202,11 @@ nav .menu-bton
     background-size:100%;
     height:calc(70vh - 100px);
   }
+  .front-in p
+  {
+    margin: 5% 0;
+    font-size:10px;
+  }
  }
  
 /*-----------------Section -2- cards--------------*/
@@ -306,13 +311,18 @@ nav .menu-bton
   margin-left: 1.5rem;
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 1024px) {
   .card-main{
     padding: 3rem;
   }
 
   .grid {
     width:auto;
+    display:block;
+  }
+  .grid-item
+  {
+    margin-top:10%;
   }
 }
 .card-btnn
@@ -332,6 +342,13 @@ nav .menu-bton
   cursor: pointer;
   letter-spacing: 0.1rem; 
 }
+@media screen and (max-width:940px)
+{
+  .card-btnn
+  {
+    font-size:7px;
+  }
+}
 
 /*-----------------Section -3--------------*/
 
@@ -345,24 +362,39 @@ nav .menu-bton
 }
 .column h1
 {
-  padding:50px 40px;
-  padding-bottom:20px;
-}
+  padding:10% 10%;
+  padding-bottom:5%;
+}  
 .column p
 {
-  padding:0px 40px;
+  padding:0% 6%;
 } 
 .row-btn
 {
   width:30%;
   height:10%;
-  margin:5% 40px;
+  margin:5% 6%;
   background-color:#05386b;
   color:white;
   border-radius:50px;
   font-size:30px;
   text-align:center;
 } 
+@media screen and (max-width:940px)
+{
+  .column h1
+  {
+    font-size:1rem;
+  }
+  .column p
+  {
+    font-size:0.5rem;
+  }
+  .row-btn
+  {
+    font-size:7px;
+  } 
+}
 
 /*-----------------Section -4 --------------*/
 
@@ -383,37 +415,46 @@ nav .menu-bton
   margin:auto;
 }
 
+/*-----------------Section -5 --------------*/
+
 .last-fourth
 {
   height:calc(100vh - 100px);
   background-image: url("images/explore-5.jpeg");
-  background-size:cover;
+  background-size:100%;
   background-repeat:no-repeat;
 }
-.h1-first
+.last-fourth h1
 {
   width:40%;
   margin-left:20%; 
-  padding-top:15%;   
   text-transform:uppercase;
-  font-size:2.5rem;           
+  font-size:2.5rem; 
 }
-.h1-second
+.h1-first
 {
-   width:40%;
-   margin-left:20%;
-   text-transform:uppercase;
-   font-size:2.5rem;
+  padding-top:15%;
 }
-
-
-.column-div-3
+@media screen and (max-width:940px)
 {
-  width:30%;
-  margin:20px;
+  .last-fourth
+  {
+    height:calc(50vh - 100px);
+    background-size:100%;
+  }
+  .last-fourth h1
+  {
+    font-size:1.5rem;
+    margin-left:10%;
+    width:80%;
+  }
+  .h1-first
+  {
+    padding-top:10%;
+  }
 }
 
-/*-----------------Section -5 --------------*/
+/*-----------------Section -6 --------------*/
 
 .quote
 {
@@ -429,7 +470,7 @@ nav .menu-bton
   padding:5% 0;
 }
 
-/*-----------------Section -6--------------*/
+/*-----------------Section -7--------------*/
 
 .sector input
 {
